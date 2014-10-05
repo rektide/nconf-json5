@@ -1,0 +1,23 @@
+{
+	"name": "nconf-json5",
+	"version": "1.0.0",
+	"description": "Json5 for nconf",
+	"main": "nconf-json5.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rektide/nconf-json5"
+	},
+	"author": "rektide de la faye",
+	"license": "X",
+	"bugs": {
+		"url": "https://github.com/rektide/nconf-json5/issues"
+	},
+	"homepage": "https://github.com/rektide/nconf-json5",
+	"dependencies": {
+		"json5": "^0.2.0",
+		"nconf": "^0.6.9"
+	}
+}
