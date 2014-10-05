@@ -29,10 +29,16 @@ var installNconf= module.exports.installNconf= (function(nconf, upgrade){
 	return nconf
 })
 
+/// install the json5 provider into nconf
+var installProvider= module.exports.installProvider= (function installProvider(nconf){
+	nconf= nconf||Nconf
+	nconf.Provider.json5= Json5
+})
+
 ///  install the json5 format into nconf
 var installFormat= module.exports.installFormat= (function installFormat(nconf){
 	nconf= nconf||Nconf
-	nconf.formats.json5= Json5
+	nconf.formats.json5= json5
 	return nconf
 })
 
@@ -40,6 +46,7 @@ var installFormat= module.exports.installFormat= (function installFormat(nconf){
 var upgrade= module.exports.upgrade= (function upgrade(nconf){
 	nconf= nconf|| Nconf
 	nconf.file= Json5
+	nconf.Provider.file= Json5
 	return nconf
 })
 
